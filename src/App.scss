@@ -1,0 +1,475 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e5ecd8;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    
+}
+.icon{
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 180px;
+}
+.fa{
+    background: wheat;
+
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 38px;
+}
+h2 {
+    margin-bottom: 18px;
+    font-size: 32px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+ul {
+    list-style: none;
+  margin: 0;
+    padding: 0;
+
+}
+.loding h1{
+        color: white;
+}
+.loding {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(#000, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+      }
+
+.text-align{
+    text-align: center;
+    max-width: 680px;
+    margin: auto;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    color: #000000;
+}
+
+section {
+    margin: 80px 0;
+}
+i{
+    cursor: pointer;
+}
+.i{
+    color: blue;
+    cursor: pointer;
+    padding: 10px;
+}
+.flex {
+    display: flex;
+}
+.flex-wrap{
+        flex-wrap: wrap;
+    }
+
+.flex-center {
+        align-items: center;
+        justify-content: center;
+    }
+
+
+.gap-30 {
+    gap: 40px;
+}
+
+.br {
+    border-radius: 10px;
+}
+
+.hero img {
+    max-width: 100%;
+    object-fit: cover;
+   
+}
+header .logo{
+    color: #070707;
+    font-weight: 900;
+    background: #9dc01e;
+    padding: 7px;
+    border-radius: 7px;
+}
+header{
+//    position: fixed;
+   z-index: 9;
+    display: flex;
+    justify-content:space-around;
+    background: linear-gradient(to bottom,rgba(47, 48, 43, 0.774)0%,rgba(36, 39, 34, 0.589)100%);
+    height: 50px;
+    width: 100%;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    margin-right: 35px;
+    color: rgb(0, 0, 0);
+    font-size: 15x;
+    font-weight: 600;
+    background: aqua;
+    transition: all ease 0.5s;
+    padding: 5px;
+    border-radius: 8px;
+}
+nav a:hover{
+    background: rgb(84, 87, 87);
+
+}
+.hero {
+    position: relative;
+    overflow: hidden;
+    height: 65vh;
+}
+.hero-contant {
+    max-width: 522px;
+    position: absolute;
+    left: 30%;
+    top: 60%;
+    transform: translateY(-50%); 
+    background: rgba(0, 0, 0, 0.596);
+    border-radius: 8px;
+    color: rgb(205, 240, 10);
+    padding: 10px;
+    
+}
+.hero .one{
+    margin: 20px;
+    
+}
+.hero-contant h1{
+    text-align: center;
+}
+.hero-contant h1 span{
+    color: rgb(121, 121, 216);
+}
+button{
+    padding: 5px 10px;
+    border-radius: 7px;
+    background:darkkhaki;
+    // margin: 20px;
+    border: none;
+    
+    cursor: pointer;
+}
+button:hover{
+    background: rgb(3, 134, 134);
+   
+}
+.hero-contant h1,p {
+    text-shadow: 4px 4px 7px #4e4e4e;
+}
+
+.special-deshesh-content{ 
+    max-width: 680px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.special-menu li{
+width: 22%;
+
+margin: auto;
+
+}
+.special-menu li h5{
+    text-align: center;
+}
+.special-menu li img{
+    height: 230px;
+}
+.filterd-deshes  ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px ;
+    justify-content: center;
+}
+.filterd-deshes  li{
+background: #817373;
+color: white;
+padding: 12px 30px ;
+margin-right: 20px;
+margin-bottom: 20px;
+border-radius: 30px;
+cursor: pointer;
+transition: all ease 0.5s;
+}
+.filterd-deshes  li.active{
+    background: #000000;
+}
+.filterd-deshes li:hover{
+  
+    background: black;
+}
+.not{
+    border: 1px solid;
+    width: 100%;
+    
+  padding: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+text-transform:uppercase;
+}
+//pagenation 
+ 
+.pagination{
+    justify-content: center;
+    margin: 50px 0 0 ;
+}
+.pagination li{
+    width: 25px;
+    height: 20px;
+    border: 1px solid;
+    margin: 0 5px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 8px;
+    transition: all ease 0.3s;
+    background: #9dc01e;
+}
+.pagination li:hover{
+    background: #433258;
+    border-color: #8e9670;
+}
+
+.popup{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 99;
+    background-color: #000000a9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.popup h2{
+    color: white;
+}
+ .popup-content{
+background-color: rgb(17, 17, 17);
+width: 800px;
+height: 480px;
+border-radius: 5px;
+padding: 20px;
+// display: flex;
+// flex-direction: column;
+// align-items: center;
+// justify-content: center ;
+}
+.popup-content h2{
+    margin-left: 8px;
+    margin-top: 10px;
+}
+ .close{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+ .close:hover{
+    color: #ff4848;
+}
+.popup-content .btnn{
+    padding: 10px;
+    font-size: 19px;
+    font-weight: bold;
+   margin: 0px 0px 0px 8px ;
+}
+.popup-content .popup-img{
+    height: 30vh;
+    overflow: hidden;
+    display: flex;
+   
+
+    margin-bottom: 20px;
+}
+// .popup-contetn-data .span{
+  
+// }
+.popup-img img{
+    width: 32%;
+    height: 100%;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+.popup-contetn-data ul{
+    display: flex;
+width: 770px;
+}
+.popup-img  p{
+    height: 190px;
+    width: 65%;
+    overflow-y: scroll;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: white;
+    padding: 15px;
+    text-align: justify;
+}
+
+.popup-contetn-data span{
+    background: #9dc01e;
+    color: rgb(12, 12, 12);
+    padding: 6px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: inline-block;
+    margin-left: 8px;
+}
+.popup-contetn-data .price{
+    // margin-left: 20%;
+    background: none;
+    color: rgb(243, 243, 243);
+    font-weight: bolder;
+    font-size: 20px;
+    border: 1px solid orange;
+    margin-left: 100px;
+}
+.popup-contetn-data h2{
+    margin-left: 8px;
+    width: 70%;
+    margin-bottom: 0px;
+    display: inline-block;
+}
+.popup-contetn-data ul li{
+    list-style: none;
+    background: wheat;
+    color: black;
+    padding: 6px 10px;
+    margin-left: 8px;
+    margin-top: 10px;
+    border-radius: 30px;
+    margin-bottom: 25px;
+
+}
+.main{
+    padding:50px  150px;
+    background: rgb(85, 68, 78);
+}
+.main h1{
+    text-align: center;
+    color: white;
+}
+.main .total{
+    background: #4e4e4e;
+    text-align: end;
+    // margin-right: 10px;
+    padding: 0 30px;
+}
+.main .total span{
+    color: #cdc6d3;
+}
+.addcart{
+    border:  1px solid ;
+    padding: 30px;
+}
+.addcart ul li div{
+    margin-left: 5%;
+    display: flex;
+}
+.addcart ul li .plus button{
+    background: green;
+    color: white;
+    // padding: 5px;
+    font-size: 30px;
+   padding: 0 10px;
+    margin-left: 35px;
+    border-radius: 7px;
+
+ }
+ .addcart ul li .plus h3 span{
+    font-size: 30px;
+    color: #949199;
+ }
+.addcart ul li .plus{
+    display: flex;
+    align-items: center;
+}
+.addcart ul li .plus .btn{
+    margin-left: 100px;
+    font-size: 15px;
+    padding: 6px;
+    background: red;
+}
+.addcart ul li .plus h3{
+    margin: 20px;
+    font-size: 25px;
+    width: 35px;
+    font-weight: 500;
+}
+.addcart ul li .plus h4{
+    margin-left: 15%;
+    font-size: 25px;
+    background: #9dc01e;
+    padding: 10px;
+    border-radius: 7px;
+}
+.addcart ul li .plus h4 span{
+    font-size: 25px;
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+}
+.addcart ul li img{
+    height: 100px;
+    border-radius: 8px;
+    // width: 100px;
+    margin-top: 10px;
+}
+
+
+.addcart ul li h4{
+    font-size: 20px;
+    margin-top: 10px;
+    width: 200px;
+    line-height: 20px;
+    margin-left: 10px;
+
+}
+.addcart ul li{
+    margin-bottom: 20px;
+    display: flex;
+}
+.one{
+    background-color: yellow;
+}
+.two{
+    background-color: blue;
+}
+
+// let priceResult = (list) => {
+//     let milk = list.map((val) => {
+//         return Object.values(val).slice(-2).reduce((acc, num) => acc * num)
+//     })
+//     return result = milk.reduce((acc, num) => acc + num)
+    
+//   }
